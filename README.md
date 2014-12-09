@@ -1,4 +1,4 @@
-trivia
-======
+Trivia
+=========
 
-BaseKit Basetheme Standard Theme
+BaseKit Standard Basetheme

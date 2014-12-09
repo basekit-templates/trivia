@@ -1,0 +1,305 @@
+// --------------------------------
+// BaseKit Baseplate: CSS > Widgets
+// --------------------------------
+
+
+// -----------------------------
+// #Table of Contents
+// -----------------------------
+
+//  1.   #LOGO
+//  2.   #COMPANY NAME
+//  3.   #NAVIGATION
+//  4.   #FEATURE
+
+//  5.   #IMAGES
+//  6.   #GALLERY
+//  7.   #SLIDESHOW
+
+//  8.   #BUTTONS
+//  8.1  -- #STANDARD
+//  8.2  -- #TWEET
+//  8.3  -- #DROPBOX
+//  8.4  -- #CLICK TO CALL
+//  8.5  -- #PAYPAL
+
+//  9.   #CONTACT FORM
+// 10.   #SIGNUP FORM
+
+// 11.   #SOCIAL ICONS
+// 12.   #TWITTER FEED
+
+// 13.   #DIVIDER (KEYLINE)
+// 14.   #PROFILE
+
+
+// -----------------------------
+// 1.  #Logo
+// -----------------------------
+
+// Add styles here...
+
+
+
+
+
+// -----------------------------
+// 2.  #Company Name
+// -----------------------------
+
+// Add styles here...
+
+
+
+
+// -----------------------------
+// 3.  #Navigation
+// -----------------------------
+
+// Folder Item Parent: Gives arrow 
+.item-name--parent:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    margin-left: 4px;
+    border: 5px solid transparent;
+    border-top-color: @color-swatch6;
+}
+
+
+
+
+// -----------------------------
+// 4.  #Feature
+// -----------------------------
+
+// Add styles here...
+
+
+
+
+// -----------------------------
+// 5.  #Images
+// -----------------------------
+
+// Image Captions
+// --------------
+
+// Gallery & Slideshow
+.image-title,
+.image-description {
+    color: @color-swatch1;
+}
+
+// Image Widget
+.image-widget__image-title,
+.image-widget__image-description {
+    color: @font-swatch5-color;
+}
+
+
+
+// -----------------------------
+// 6.  #Gallery
+// -----------------------------
+
+// Gallery Layout
+// --------------
+
+// Gallery List
+.image-gallery__gallery-list {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; 
+}
+
+// Gallery Item
+.image-gallery__gallery-item {
+    position: relative;
+    width: 32%;
+    margin-bottom: 2%;
+    // Display 100% at mobile
+    @media @mobile {
+        width: 100%;
+        margin-bottom: 4%;
+    }
+}
+
+
+// Gallery Images
+// --------------
+
+// Use Background-image Method
+.image-gallery__image-link {
+    display: block;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media @tablet {
+        height: 210px;
+    }
+}
+
+// Hide Img Element
+.image-gallery__image {
+    display: none;
+}
+
+
+// Gallery Image Captions
+// ----------------------
+
+// Hide Caption
+.image-gallery__caption {
+    display: none;
+    margin: 0;
+    padding: 20px;
+    background-color: hsla(hue(@color-swatch7), saturation(@color-swatch7), lightness(@color-swatch7), 0.8); 
+}
+
+// Show Caption
+.image-link:hover .image-gallery__caption {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+// -----------------------------
+// 7.  #Slideshow
+// ----------------------------- 
+
+// Slideshow Layout
+// ----------------
+
+// Slideshow Height
+.slideshow, .slideshow__figure {
+    position: relative;
+    min-height: 400px;
+}
+
+
+// Slideshow Images
+// ----------------
+
+// Use Background-image Method
+.slideshow__figure {
+    background-size: cover;
+    background-position: center;
+}
+// Hide Img Element
+.slideshow__image {
+    display: none;
+}
+
+
+// Slideshow Image Captions
+// ------------------------
+
+.slideshow__caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+
+
+
+// -----------------------------
+// 8.  #Buttons
+// -----------------------------
+
+//  8.1  #STANDARD
+//  --------------
+
+
+//  8.2  #TWEET
+//  --------------
+
+
+//  8.3  #STANDARD
+//  --------------
+
+
+//  8.4  #DROPBOX
+//  --------------
+
+
+//  8.5  #CLICK TO CALL
+//  --------------
+
+
+//  8.5  #PAYPAL
+//  --------------
+
+
+
+
+// -----------------------------
+// 9.  #Contact Form
+// -----------------------------
+
+// Add styles here...
+
+
+
+
+// -----------------------------
+// 10.  #Signup Form
+// -----------------------------
+
+// Add styles here...
+
+
+
+
+// -----------------------------
+// 11.  #Social Icons
+// -----------------------------
+
+// Add styles here...
+
+
+
+
+// -----------------------------
+// 12.  #Twitter Feed
+// -----------------------------
+
+// Add styles here...
+
+
+
+
+// -----------------------------
+// 13.  #Divider (Keyline)
+// -----------------------------
+
+// Add styles here...
+
+
+
+
+// -----------------------------
+// 14. #Profile
+// -----------------------------
+
+// Add styles here...
+
+
