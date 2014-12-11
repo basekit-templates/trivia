@@ -2,4 +2,48 @@
 // BaseKit Baseplate: CSS > Plugin: Blog
 // -------------------------------------
 
-// No styles added here
+// Blog Post List
+.post-content {
+	margin: 20px 0 20px;
+}
+
+.blog-search__input {
+	margin:0px auto;
+	display:table;
+}
+
+.blog-post-list__title-link, .blog-post__post-title {	
+    &:after {
+        border-top: 1px solid @color-swatch7;
+        content: "";
+        display: block;
+        position: relative;
+        margin: 30px auto 15px;
+        min-width: 60px;
+        max-width: 200px;
+        width: 5%;
+    }
+}
+
+.blog-post-list__post-image, .blog-post-list__post-content {
+	text-align:center;
+}
+
+// Blog Post List Footer
+.blog-post-list__post-footer {
+	border: 1px solid @color-swatch7;
+	padding: 20px 20px 10px;
+	text-align:center;
+}
+
+// Blog Post
+.blog-post__post-content {
+	text-align:center;
+}
+
+// Blog Post List Footer
+.blog-post__post-footer {
+	border: 1px solid @color-swatch7;
+	padding: 20px 20px;
+	text-align:center;
+}

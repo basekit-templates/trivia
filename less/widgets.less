@@ -37,10 +37,12 @@
 // 1.  #Logo
 // -----------------------------
 
-// Add styles here...
-
-
-
+.widget {
+    &.logo, &.companyname, {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
 
 
 // -----------------------------
@@ -66,17 +68,54 @@
     border-top-color: @color-swatch6;
 }
 
-
+// Add Styles to Selected Li
+.extendednavigation li.selected {
+    a, .text {
+        color: @font-swatch6-color-hover;
+    }
+}
 
 
 // -----------------------------
 // 4.  #Feature
 // -----------------------------
 
-// Add styles here...
+// Feature Background (Image)
+// --------------------------
 
+.feature-widget__background-image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+// Feature Content Wrap
+// --------------------
 
+.feature-widget__content-wrap {
+    text-align:center;
+    max-width: 50%;
+}
+
+// Feature Content
+// ---------------
+
+.feature-widget__button {
+    border:1px solid @color-swatch1;
+    background-color:transparent;
+    padding:8px 30px;
+    &:hover {
+        border:1px solid transparent;
+    }
+}
 
 // -----------------------------
 // 5.  #Images
@@ -166,6 +205,7 @@
     margin: 0;
     padding: 20px;
     background-color: hsla(hue(@color-swatch7), saturation(@color-swatch7), lightness(@color-swatch7), 0.8); 
+    text-align:center;
 }
 
 // Show Caption
@@ -228,6 +268,12 @@
 //  8.1  #STANDARD
 //  --------------
 
+button, .button {
+    padding:8px 30px;
+    background-color:transparent;
+    border:1px solid @color-swatch4;
+    color:@color-swatch4;
+}
 
 //  8.2  #TWEET
 //  --------------
@@ -248,6 +294,11 @@
 //  8.5  #PAYPAL
 //  --------------
 
+.widget__paypal-button form {
+    border: 0;
+    padding:0;
+    margin:0;
+}
 
 
 
@@ -255,16 +306,41 @@
 // 9.  #Contact Form
 // -----------------------------
 
-// Add styles here...
+// Body
+.contact-form__form-body {
+    margin:0px 30px;
+}
 
+// Inputs
+input.input[type=email],input.input[type=search], .contact-form__textarea {
+    border:0;
+    border-bottom:1px solid @color-swatch7;
+    &:focus {
+        border-color:@color-swatch4;
+    }
+}
 
-
+// Button
+.contact-form__input {
+    margin:0px auto;
+    display:table;
+    border:0;
+    padding: 8px 30px;
+    border:1px solid @color-swatch4;
+}
 
 // -----------------------------
 // 10.  #Signup Form
 // -----------------------------
 
-// Add styles here...
+.signup-form__legend {
+    padding:0;
+}
+
+.signup-form__input {
+    margin:0px auto;
+    display:table;
+}
 
 
 
@@ -273,19 +349,69 @@
 // 11.  #Social Icons
 // -----------------------------
 
-// Add styles here...
+.social-list {
+    padding:0;
+}
 
+.social-icons__social-item {
+    &:hover {
+        background-color:@color-swatch4;
+        color:white;
+    }
+}
 
+.social-icons__social-item a:hover {
+    color:white;
+    text-decoration: none;
+}
 
+.social-icons__social-link {
+    padding: 17px 20px;
+    border: 1px solid @color-swatch4;
+    padding: 10px;
+    display:inline-block;
+}
 
 // -----------------------------
 // 12.  #Twitter Feed
 // -----------------------------
 
-// Add styles here...
+// Body
+.widget__twitter {
+    background-color:@color-swatch1;
+    border:3px solid @color-swatch7;
+    padding:40px 60px 15px;
+}
 
+.tweet-list {
+    padding:0;
+}
 
+// Content
 
+.twitter-feed__avatar {
+    display:inline-block;
+    margin-right:20px;
+}
+
+.twitter-feed__tweet-wrap {
+    display:inline-block;
+    vertical-align: top;
+    a {
+        font-weight: @font-swatch1-font-weight;
+    }
+}
+
+.twitter-feed__tweet-item {
+    border-bottom: 1px solid @color-swatch7;
+    padding:0px 0px 40px 0px;
+    margin:0px 0px 40px 0px;
+    &:last-child {
+        border-bottom:0;
+        padding:0px 0px 7px 0px;
+        margin:0px 0px 7px 0px;
+    }
+}
 
 // -----------------------------
 // 13.  #Divider (Keyline)

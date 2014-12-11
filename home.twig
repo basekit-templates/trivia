@@ -1,0 +1,36 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+{% include "includes/header.twig" %}
+
+{{widget('feature', 'featurehome', {
+	"header": "profile", 
+	"defaultBgImg": asset('images/feature-bg.jpg'),
+	'positionTopPercentage': '0',
+	'showBtn': true,
+	buttonText: "Lorem Ipsum"
+})|raw}}
+
+<!-- Container -->
+<div class="container">
+
+	<!-- Page Content -->
+	<section class="template-content">
+
+		<!-- Template Widgets -->
+		
+		<!-- End Template Widgets -->
+
+		<!-- Main Widet Zone -->
+	   	{{zone('main')|raw}}
+
+	</section>
+	<!-- End Page Content -->
+
+</div>
+<!-- End Container -->
+
+{% include "includes/footer.twig" %}
+
+{% endblock %}

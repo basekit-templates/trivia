@@ -2,6 +2,38 @@
 // BaseKit Baseplate: CSS > Plugin: Menu
 // -------------------------------------
 
+// Menu Navigation
+.widget__menusections {
+	border:1px solid @color-swatch7;
+	text-align:center;
+}
+
+// Menu Content
+.widget__menu {
+	text-align:center;
+}
+
+.menu__section-title, .menu__item-title, .menu__item-subtitle {
+	    &:after {
+        border-top: 1px solid @color-swatch7;
+        content: "";
+        display: block;
+        position: relative;
+        margin: 20px auto 15px;
+        min-width: 60px;
+        max-width: 200px;
+        width: 5%;
+    }
+}
+
+.menu__dietary-item {
+	&:before {
+        content: "\f111";
+		font-size: 8px;
+		vertical-align: top;
+    }
+}
+
 // Item Image
 .item-image {
 	background-color: darken(@color-swatch1,5%);

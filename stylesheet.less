@@ -17,13 +17,17 @@
 // 1. #LESS Includes
 // -----------------------------
 
-@import "@{templateCommon}/bk-less-framework/bk-less-framework.less"; // BaseKit LESS Framework 
+@import "@{templateCommon}/bk-less-framework.less"; // BaseKit LESS Framework 
 
 // ** BaseKit LESS Framework is a set of non obtrusive LESS files that can be pulled into 
 //    your template to guarentee widgets come to life. Proivides default styles for all widgets.
 
 // Template Includes
+@import "@{templateLocal}/less/theme.less"; // Theme
 @import "@{templateLocal}/less/widgets.less"; // Widgets
+@import "@{templateLocal}/less/mixins.less"; // Mixins
+@import "@{templateLocal}/less/navigation.less"; // Navigation
+@import "@{templateLocal}/less/layout-header.less"; // Flexbox
 
 // Plugin Includes
 @import "@{templateLocal}/less/plugins/plugin-blog.less"; // Plugin: Blog CSS
@@ -43,14 +47,9 @@
 // --------------
 
 .container {
-    width: 90%;
-    margin: 0 5%;
-    @media only screen and (min-width: 1140px) {
-    	width: 960px; // 1140px - 10% for margins
-		margin: 0 auto;
-	}
+    width: 100%;
+    padding: 2%;
 }
-
 
 
 
@@ -58,4 +57,7 @@
 // 3. #Template Styles
 // -----------------------------
 
-
+.template-content {
+	width:960px;
+	margin:0px auto;
+}
