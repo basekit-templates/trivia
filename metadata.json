@@ -59,10 +59,10 @@
         }
     },
     "fontSwatch": {
-       "title": "Helvetica Neue, Helvetica, Arial, sans-serif",
+       "title": ""Roboto", Geneva, "Lucida Console", sans-serif",
         "font1": {
             "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
-            "font-size": "30px",
+            "font-size": "28px",
             "font-weight": "300",
             "line-height": "inherit",
             "color": "@color-swatch4",
@@ -70,7 +70,7 @@
         },
         "font2": {
             "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
-            "font-size": "26px",
+            "font-size": "24px",
             "font-weight": "300",
             "line-height": "inherit",
             "color": "@color-swatch4",
@@ -78,7 +78,7 @@
         },
         "font3": {
             "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
-            "font-size": "22px",
+            "font-size": "20px",
             "font-weight": "300",
             "line-height": "inherit",
             "color": "@color-swatch4",
@@ -86,7 +86,7 @@
         },
         "font4": {
             "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
-            "font-size": "18px",
+            "font-size": "16px",
             "font-weight": "300",
             "line-height": "inherit",
             "color": "@color-swatch4",
