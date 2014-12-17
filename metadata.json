@@ -8,6 +8,7 @@
     "widgetVersion":2,
     "images":[
         "images/feature-bg.jpg",
+        "images/feature-default.jpg",
         "images/logo.png"
     ],
     "colorSwatches":
@@ -59,7 +60,7 @@
         }
     },
     "fontSwatch": {
-       "title": ""Roboto", Geneva, "Lucida Console", sans-serif",
+       "title": "Roboto, Geneva, Lucida Console, sans-serif",
         "font1": {
             "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
             "font-size": "28px",
