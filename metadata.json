@@ -120,13 +120,13 @@
             "color": "@color-swatch1",
             "letter-spacing": "inherit",
             "background-color": "@color-swatch3",
-            "background-color-hover": "darken(@color-swatch3,10%)"
+            "background-color-hover": "@color-swatch3"
         },
         "font8": {
             "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
             "font-size": "34px",
             "font-weight": "300",
-            "line-height": "inherit",
+            "line-height": "42px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit"
         },

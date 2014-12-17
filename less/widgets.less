@@ -31,6 +31,8 @@
 
 // 13.   #DIVIDER (KEYLINE)
 // 14.   #PROFILE
+// 15.   #Facebook
+// 16.   #YELP
 
 
 // -----------------------------
@@ -97,6 +99,10 @@
     min-height: 100px;
     height: 500px;
     display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     align-items: center;
     justify-content: center;
 }
@@ -106,7 +112,10 @@
 
 .feature-widget__content-wrap {
     text-align:center;
-    max-width: 50%;
+    max-width: 80%;
+    @media @tablet {
+        max-width:100%;
+    }
 }
 
 // Feature Content
@@ -370,7 +379,7 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
 .social-icons__social-item {
     &:hover {
         background-color:@color-swatch4;
-        color:white;
+        color:@color-swatch1;
     }
 }
 
@@ -395,6 +404,9 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
     background-color:@color-swatch1;
     border:1px solid @color-swatch7;
     padding:40px 60px 15px;
+    @media @tablet {
+        padding:20px;
+    }
 }
 
 .tweet-list {
@@ -443,3 +455,18 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
 // Add styles here...
 
 
+// -----------------------------
+// 15. #Facebook
+// -----------------------------
+
+.fb_iframe_widget_fluid span {
+    max-width: 100%;
+}
+
+// -----------------------------
+// 16. #Facebook
+// -----------------------------
+
+.yelp-reviews__review-title {
+    font-size: @font-swatch4-font-size;
+}

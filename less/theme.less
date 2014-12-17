@@ -14,7 +14,7 @@
 // -----------------------------
 
 .template-header {
-	margin:0px 2%;
+	margin: 0px 2%;
 }
 
 .template-header,
@@ -35,7 +35,7 @@
 .template-footer {
 	min-height: 100px;
 	background-color: @color-swatch3;
-	text-align:center;
+	text-align: center;
 	color: @font-swatch9-color;
 	// Change heading elements to white
 	h1, h2, h3, h4 {
@@ -44,7 +44,7 @@
 	// Lighten paragraph & link elements
 	p, a {
 		color: @font-swatch9-color;
-		padding:0;
+		padding: 0;
 	}
 	// Reset Twitter feed styles
 	.twitter-feed {
@@ -111,14 +111,17 @@ blockquote:before {
 // ----------
 
 form, .form {
-    background-color:@color-swatch1;
-    border:1px solid @color-swatch7;
+    background-color: @color-swatch1;
+    border: 1px solid @color-swatch7;
     padding: 20px 40px 10px;
+    @media @tablet {
+    	padding:10px;
+    }
 }
 
 // Form Body
 .form-body {
-	margin:0px 30px 20px;
+	margin: 0px 30px 20px;
 	@media @mobile {
 		margin: 20px;
 	}
@@ -172,22 +175,22 @@ input[type="email"],
 input[type="password"],
 textarea,
 .input--single-line {
-    border:0;
-    border-bottom:1px solid @color-swatch7;
+    border: 0;
+    border-bottom: 1px solid @color-swatch7;
     &:focus {
-        border:0;
-        box-shadow:none;
-        outline:none;
+        border: 0;
+        box-shadow: none;
+        outline: none;
         border-bottom: 1px solid @color-swatch4;
     }
 }
 
 .signup-form__label, .contact-form__legend, .blog-search__legend {
-    background-color:@color-swatch1;
-    border-bottom:0;
-    text-align:center;
-    font-size:@font-swatch1-font-size;
-    font-weight:@font-swatch1-font-weight;
+    background-color: @color-swatch1;
+    border-bottom: 0;
+    text-align: center;
+    font-size: @font-swatch1-font-size;
+    font-weight: @font-swatch1-font-weight;
     &:after {
         border-top: 1px solid @color-swatch7;
         content: "";
