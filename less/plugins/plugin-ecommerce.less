@@ -10,6 +10,7 @@
 // 2. #PRODUCT LIST
 // 3. #BASKET WIDGET
 // 4. #BASKET SUMMARY
+// 5. #Basket Filters
 
 
 // -------------------------------
@@ -134,3 +135,34 @@
     padding:0;
 }
 
+// -------------------------------
+// 5. #Basket Filters
+// -------------------------------
+
+.product-listing__listing-section {
+    @media @mobile {
+        text-align:center;
+    }
+}
+
+.product-listing__form-body {
+    margin:20px 10px 20px 20px;
+}
+
+.product-listing__form-group {
+    @media @mobile {
+        display:block;
+    }
+}
+
+.cell--header.basket-summary__cell, .basket-summary__cell {
+    @media @mobile {
+            text-align:center;
+        }
+}
+
+select {
+    @media @mobile {
+        width:100%;
+    }
+}

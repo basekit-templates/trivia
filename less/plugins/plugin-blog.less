@@ -29,6 +29,13 @@
 	text-align:center;
 }
 
+.post-article {
+	padding: 0 10%;
+	@media @mobile {
+		padding:0;
+	}
+}
+
 // Blog Post List Footer
 .blog-post-list__post-footer {
 	border: 1px solid @color-swatch7;
@@ -43,6 +50,10 @@
 
 .blog-post__post-attributes a, .blog-post-list__post-excerpt a {
 	color: lighten(@font-swatch5-color,20%);
+}
+
+.blog-post__post-article {
+	padding:0;
 }
 
 // Blog Post List Footer

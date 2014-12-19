@@ -39,23 +39,37 @@
 // 1.  #Logo
 // -----------------------------
 
-.widget {
-    &.logo, &.companyname, {
-        display: inline-block;
-        vertical-align: middle;
-    }
-}
-
 .widget__logo {
     margin-right:10px;
 }
 
+.company-logo__logo-link {
+    @media @tablet {
+        margin: 0px auto;
+        display: table;
+    }
+}
 
 // -----------------------------
 // 2.  #Company Name
 // -----------------------------
 
-// Add styles here...
+.widget__company-name {
+    @media @tablet {
+        text-align:center;
+    }
+}
+
+.company-link {
+    @media @tablet {
+        font-size: bkscale(@font-swatch10-font-size,0.8);
+        line-height: bkscale(@font-swatch10-line-height,0.8);
+    }
+    @media @mobile {
+        font-size: bkscale(@font-swatch10-font-size,0.7);
+        line-height: bkscale(@font-swatch10-line-height,0.7);
+    }
+}
 
 
 
@@ -105,6 +119,9 @@
     display: -webkit-flex;
     align-items: center;
     justify-content: center;
+    @media @mobile {
+        height:300px;
+    }
 }
 
 // Feature Content Wrap
@@ -121,6 +138,27 @@
 // Feature Content
 // ---------------
 
+.feature-widget__headline {
+    @media @tablet {
+        font-size: bkscale(@font-swatch8-font-size,0.8);
+        line-height: bkscale(@font-swatch8-line-height,0.8);
+    }
+    @media @mobile {
+        font-size: bkscale(@font-swatch8-font-size,0.7);
+        line-height: bkscale(@font-swatch8-line-height,0.7);
+    }
+}
+
+.feature-widget__strapline {
+    @media @tablet {
+        font-size: bkscale(@font-swatch9-font-size,0.9);
+        line-height: bkscale(@font-swatch9-line-height,0.9);
+    }
+    @media @mobile {
+        font-size: bkscale(@font-swatch9-font-size,0.8);
+        line-height: bkscale(@font-swatch9-line-height,0.8);
+    }
+}
 
 // Default Page Feature
 // --------------------------
@@ -147,7 +185,6 @@
 .image-widget__image-description {
     color: @font-swatch5-color;
 }
-
 
 
 // -----------------------------
@@ -216,8 +253,19 @@
     display: none;
     margin: 0;
     padding: 20px;
-    background-color: hsla(hue(@color-swatch7), saturation(@color-swatch7), lightness(@color-swatch7), 0.8); 
+    background-color: hsla(hue(@color-swatch3), saturation(@color-swatch3), lightness(@color-swatch3), 0.9); 
     text-align:center;
+        &:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        border: 10px solid transparent;
+        box-sizing: border-box;
+        box-shadow: inset 0 0 1px 1px @color-swatch1;
+        top: 0;
+        left: 0;
+    }
 }
 
 // Show Caption
@@ -227,9 +275,11 @@
     display: block;
     width: 100%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-
-
 
 
 // -----------------------------
@@ -275,7 +325,12 @@
     padding: 20px;
 }
 
-
+// Slideshow Buttons
+.slideshow__slide-navigation button {
+        @media @mobile {
+        padding: 4px 12px;
+    }
+}
 
 
 // -----------------------------
@@ -376,15 +431,19 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
     padding:0;
 }
 
+.social-item {
+    margin-bottom:10px;
+}
+
 .social-icons__social-item {
     &:hover {
         background-color:@color-swatch4;
-        color:@color-swatch1;
+        color:@font-swatch9-color;
     }
 }
 
 .social-icons__social-item a:hover {
-    color:white;
+    color:@font-swatch9-color;
     text-decoration: none;
 }
 
@@ -407,6 +466,9 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
     @media @tablet {
         padding:20px;
     }
+    @media @mobile {
+        text-align:center;
+    }
 }
 
 .tweet-list {
@@ -418,13 +480,24 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
 .twitter-feed__avatar {
     display:inline-block;
     margin-right:20px;
+    @media @mobile {
+        display:block;
+        margin-right:0;
+        margin-bottom:20px;
+    }
 }
 
 .twitter-feed__tweet-wrap {
     display:inline-block;
     vertical-align: top;
+    @media @tablet {
+        max-width:320px;
+    }
     a {
         font-weight: @font-swatch1-font-weight;
+    }
+    p {
+        padding-bottom:0;
     }
 }
 
