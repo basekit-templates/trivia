@@ -43,7 +43,7 @@
     margin-right:10px;
 }
 
-.company-logo__logo-link {
+.logo-link {
     @media @tablet {
         margin: 0px auto;
         display: table;
@@ -54,7 +54,7 @@
 // 2.  #Company Name
 // -----------------------------
 
-.widget__company-name {
+.company-name {
     @media @tablet {
         text-align:center;
     }
@@ -119,6 +119,9 @@
     display: -webkit-flex;
     align-items: center;
     justify-content: center;
+    @media @tablet {
+        height:400px;
+    }
     @media @mobile {
         height:300px;
     }
@@ -159,6 +162,11 @@
         line-height: bkscale(@font-swatch9-line-height,0.8);
     }
 }
+
+// Feature Button
+// ---------------
+
+.feature-widget__button { margin: 10px 0 0 0; }
 
 // Default Page Feature
 // --------------------------
