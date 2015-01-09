@@ -260,19 +260,26 @@
 .image-gallery__caption {
     display: none;
     margin: 0;
-    padding: 20px;
-    background-color: hsla(hue(@color-swatch3), saturation(@color-swatch3), lightness(@color-swatch3), 0.9); 
-    text-align:center;
+    padding: 5px 10px 20px 15px;
+    background-color:transparent;
+    -webkit-transition: all 1s ease;
+    -moz-transition:    all 1s ease;
+    -ms-transition:     all 1s ease;
+    -o-transition:      all 1s ease;
+    transition:         all 1s ease;
+    &:hover {
+    background-color:fade(@color-swatch3,90%);
         &:after {
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 100%;
-        border: 10px solid transparent;
-        box-sizing: border-box;
-        box-shadow: inset 0 0 1px 1px @color-swatch1;
-        top: 0;
-        left: 0;
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            border: 10px solid transparent;
+            box-sizing: border-box;
+            box-shadow: inset 0 0 1px 1px @color-swatch1;
+            top: 0;
+            left: 0;
+        }
     }
 }
 
@@ -328,9 +335,17 @@
 
 .slideshow__caption {
     position: absolute;
-    bottom: 0;
+    bottom: 140px;
     width: 100%;
     padding: 20px;
+    @media @mobile {
+        display:none;
+    }
+}
+
+.slideshow__image-title, 
+.slideshow__image-description {
+    padding: 0 10%;
 }
 
 // Slideshow Buttons
@@ -340,6 +355,33 @@
     }
 }
 
+// Navigation Buttons
+.slide-navigation {
+    position: absolute;
+    top: 180px;
+    width: 100%;
+}
+
+.previous-button {
+    float: left;
+}
+
+.next-button {
+    float: right;
+}
+
+.pause-toggle {
+    display:none;
+}
+
+.button--pagination.slideshow__button {
+    vertical-align: top;
+    padding: 10px;
+}
+
+.control-text {
+    display:none;
+}
 
 // -----------------------------
 // 8.  #Buttons

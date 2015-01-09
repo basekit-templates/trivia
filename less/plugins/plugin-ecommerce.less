@@ -44,8 +44,32 @@
     vertical-align: top;
 }
 
+.product__product-images {
+    width:48%;
+    float:left;
+    padding:0 2%;
+    @media @tablet {
+        width:100%;
+    }
+}
 
+.product-header, 
+.product-body,
+.product-actions {
+    padding-left: 50%;
+    @media @tablet {
+        padding-left: 0;
+    }
+}
 
+.ecom-product-go-to-checkout-btn,
+.basket__basket-toggle {
+    background-color: @color-swatch3;
+    color: @font-swatch8-color;
+    &:hover {
+        background-color: darken(@color-swatch3,10%);
+    }
+}
 
 // -----------------------------
 // 2. #Product List
