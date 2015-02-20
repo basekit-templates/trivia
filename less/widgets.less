@@ -50,6 +50,9 @@
     }
 }
 
+
+
+
 // -----------------------------
 // 2.  #Company Name
 // -----------------------------
@@ -103,7 +106,7 @@
 // Feature Background (Image)
 // --------------------------
 
-.feature-widget__background-image {
+.feature__background-image {
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-background-size: cover;
@@ -127,10 +130,11 @@
     }
 }
 
+
 // Feature Content Wrap
 // --------------------
 
-.feature-widget__content-wrap {
+.feature__content-wrap {
     text-align:center;
     max-width: 80%;
     @media @tablet {
@@ -138,10 +142,11 @@
     }
 }
 
+
 // Feature Content
 // ---------------
 
-.feature-widget__headline {
+.feature__headline {
     @media @tablet {
         font-size: bkscale(@font-swatch8-font-size,0.8);
         line-height: bkscale(@font-swatch8-line-height,0.8);
@@ -152,7 +157,7 @@
     }
 }
 
-.feature-widget__strapline {
+.feature__strapline {
     @media @tablet {
         font-size: bkscale(@font-swatch9-font-size,0.9);
         line-height: bkscale(@font-swatch9-line-height,0.9);
@@ -163,17 +168,21 @@
     }
 }
 
+
 // Feature Button
 // ---------------
 
-.feature-widget__button { margin: 10px 0 0 0; }
+.feature__button { margin: 10px 0 0 0; }
 
 // Default Page Feature
 // --------------------------
 
-.default-feature .feature-widget__background-image {
+.default-feature .feature__background-image {
     height:150px;
 }
+
+
+
 
 // -----------------------------
 // 5.  #Images
@@ -195,6 +204,8 @@
 }
 
 
+
+
 // -----------------------------
 // 6.  #Gallery
 // -----------------------------
@@ -203,7 +214,7 @@
 // --------------
 
 // Gallery List
-.image-gallery__gallery-list {
+.gallery__gallery-list {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -220,7 +231,7 @@
 }
 
 // Gallery Item
-.image-gallery__gallery-item {
+.gallery__gallery-item {
     position: relative;
     width: 32%;
     margin-bottom: 2%;
@@ -236,7 +247,7 @@
 // --------------
 
 // Use Background-image Method
-.image-gallery__image-link {
+.gallery__image-link {
     display: block;
     height: 280px;
     background-repeat: no-repeat;
@@ -248,7 +259,7 @@
 }
 
 // Hide Img Element
-.image-gallery__image {
+.gallery__image {
     display: none;
 }
 
@@ -257,7 +268,7 @@
 // ----------------------
 
 // Hide Caption
-.image-gallery__caption {
+.gallery__caption {
     display: none;
     margin: 0;
     padding: 5px 10px 20px 15px;
@@ -284,7 +295,7 @@
 }
 
 // Show Caption
-.image-link:hover .image-gallery__caption {
+.image-link:hover .gallery__caption {
     position: absolute;
     top: 0;
     display: block;
@@ -297,6 +308,8 @@
 }
 
 
+
+
 // -----------------------------
 // 7.  #Slideshow
 // ----------------------------- 
@@ -305,12 +318,12 @@
 // ----------------
 
 // Slideshow Height
-.slideshow, .slideshow__figure {
+.responsiveslideshow, .responsiveslideshow__figure {
     position: relative;
     min-height: 400px;
 }
 
-.slideshow__slideshow-controls, .slideshow__caption {
+.responsiveslideshow__slideshow-controls, .responsiveslideshow__caption {
     text-align:center;
     margin-top:15px;
 }
@@ -320,12 +333,12 @@
 // ----------------
 
 // Use Background-image Method
-.slideshow__figure {
+.responsiveslideshow__figure {
     background-size: cover;
     background-position: center;
 }
 // Hide Img Element
-.slideshow__image {
+.responsiveslideshow__image {
     display: none;
 }
 
@@ -333,7 +346,7 @@
 // Slideshow Image Captions
 // ------------------------
 
-.slideshow__caption {
+.responsiveslideshow__caption {
     position: absolute;
     bottom: 140px;
     width: 100%;
@@ -343,13 +356,14 @@
     }
 }
 
-.slideshow__image-title, 
-.slideshow__image-description {
+.responsiveslideshow__image-title, 
+.responsiveslideshow__image-description {
     padding: 0 10%;
 }
 
+
 // Slideshow Buttons
-.slideshow__slide-navigation button {
+.responsiveslideshow__slide-navigation button {
         @media @mobile {
         padding: 4px 12px;
     }
@@ -374,7 +388,7 @@
     display:none;
 }
 
-.button--pagination.slideshow__button {
+.button--pagination.responsiveslideshow__button {
     vertical-align: top;
     padding: 10px;
 }
@@ -382,6 +396,9 @@
 .control-text {
     display:none;
 }
+
+
+
 
 // -----------------------------
 // 8.  #Buttons
@@ -407,6 +424,7 @@ button, .button {
     }
 }
 
+
 //  8.2  #TWEET
 //  --------------
 
@@ -427,6 +445,7 @@ button, .button {
     padding:0;
     margin:0;
 }
+
 
 
 
@@ -457,6 +476,9 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
     border:1px solid @color-swatch4;
 }
 
+
+
+
 // -----------------------------
 // 10.  #Signup Form
 // -----------------------------
@@ -485,31 +507,35 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
     margin-bottom:10px;
 }
 
-.social-icons__social-item {
+.socialicons__social-item {
     &:hover {
         background-color:@color-swatch4;
         color:@font-swatch9-color;
     }
 }
 
-.social-icons__social-item a:hover {
+.socialicons__social-item a:hover {
     color:@font-swatch9-color;
     text-decoration: none;
 }
 
-.social-icons__social-link {
+.socialicons__social-link {
     padding: 17px 20px;
     border: 1px solid @color-swatch4;
     padding: 10px;
     display:inline-block;
 }
 
+
+
+
+
 // -----------------------------
 // 12.  #Twitter Feed
 // -----------------------------
 
 // Body
-.widget__twitter {
+.twitter {
     background-color:@color-swatch1;
     border:1px solid @color-swatch7;
     padding:40px 60px 15px;
@@ -527,7 +553,7 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
 
 // Content
 
-.twitter-feed__avatar {
+.twitter__avatar {
     display:inline-block;
     margin-right:20px;
     @media @mobile {
@@ -537,7 +563,7 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
     }
 }
 
-.twitter-feed__tweet-wrap {
+.twitter__tweet-wrap {
     display:inline-block;
     vertical-align: top;
     @media @tablet {
@@ -551,7 +577,7 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
     }
 }
 
-.twitter-feed__tweet-item {
+.twitter__tweet-item {
     border-bottom: 1px solid @color-swatch7;
     padding:0px 0px 40px 0px;
     margin:0px 0px 40px 0px;
@@ -561,6 +587,10 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
         margin:0px 0px 7px 0px;
     }
 }
+
+
+
+
 
 // -----------------------------
 // 13.  #Divider (Keyline)
@@ -578,6 +608,8 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
 // Add styles here...
 
 
+
+
 // -----------------------------
 // 15. #Facebook
 // -----------------------------
@@ -585,6 +617,9 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
 .fb_iframe_widget_fluid span {
     max-width: 100%;
 }
+
+
+
 
 // -----------------------------
 // 16. #Facebook
