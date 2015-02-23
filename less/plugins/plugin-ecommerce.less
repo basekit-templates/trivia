@@ -209,14 +209,22 @@
 // 5. #Basket Filters
 // -------------------------------
 
+.ecomproductslist__fieldset--search {
+    float: left;
+}
+
 .product-listing__listing-section {
     @media @mobile {
         text-align:center;
     }
 }
 
-.product-listing__form-body {
-    margin:20px 10px 20px 20px;
+.ecomproductslist__legend {
+    padding: 10px 30px 10px;
+}
+
+.ecomproductslist__form-body {
+    margin: 30px 30px 20px;
 }
 
 .product-listing__form-group {
@@ -225,7 +233,8 @@
     }
 }
 
-.cell--header.basket-summary__cell, .basket-summary__cell {
+.cell--header.basket-summary__cell, 
+.basket-summary__cell {
     @media @mobile {
             text-align:center;
         }
