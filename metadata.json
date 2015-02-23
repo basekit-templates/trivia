@@ -20,7 +20,7 @@
             "color4":"#2b3040",
             "color5":"#2b3040",
             "color6":"#ffffff",
-            "color7":"#D3D3D3"
+            "color7":"#EDEDED"
         },
         "Swatch 2": {
             "color1":"#ffffff",
@@ -65,7 +65,7 @@
             "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
             "font-size": "28px",
             "font-weight": "300",
-            "line-height": "inherit",
+            "line-height": "36px",
             "color": "@color-swatch4",
             "letter-spacing": "2px"
         },
@@ -73,7 +73,7 @@
             "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
             "font-size": "24px",
             "font-weight": "300",
-            "line-height": "inherit",
+            "line-height": "32px",
             "color": "@color-swatch4",
             "letter-spacing": "2px"
         },
@@ -81,7 +81,7 @@
             "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
             "font-size": "20px",
             "font-weight": "300",
-            "line-height": "inherit",
+            "line-height": "28px",
             "color": "@color-swatch4",
             "letter-spacing": "2px"
         },
@@ -89,7 +89,7 @@
             "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
             "font-size": "16px",
             "font-weight": "300",
-            "line-height": "inherit",
+            "line-height": "24px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },

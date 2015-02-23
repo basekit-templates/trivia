@@ -4,12 +4,27 @@
 
 // Menu Navigation
 .widget__menusections {
-	border:1px solid @color-swatch7;
-	text-align:center;
-    a {
-        color: lighten(@font-swatch5-color,20%);
-    }
+	border: 1px solid @color-swatch7;
+	text-align: center;
 }
+
+.menusections-item {
+    margin-right: 0;
+}
+
+.menusections-item:after {
+    content: "/";
+    font-size: 15px;
+    vertical-align: middle;
+    color: @color-swatch3;
+    margin-right: 0;
+    padding: 0 20px;
+}
+
+.menusections-item:last-child:after {
+    display: none;
+}
+
 
 // Menu Content
 .widget__menu {
@@ -17,7 +32,7 @@
 }
 
 .menu__section-header {
-    margin-top:20px;
+    margin: 20px 0;
 }
 
 .menu__section-title, .menu__item-title, .menu__item-subtitle {
@@ -49,6 +64,12 @@
 
 // Featured Section
 .menu-section--featured, .menu-item--featured  {
-    border:1px solid @color-swatch7;
-    padding:20px;
+    border: 1px solid @color-swatch7;
+    padding: 20px;
 }
+
+.menu-section--featured, .menu-item--featured {
+    .menu__section-title:after, .menu__item-title:after, .menu__item-subtitle:after {
+        border-top: 1px solid white;
+    }
+} 

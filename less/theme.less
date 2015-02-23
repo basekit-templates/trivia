@@ -110,15 +110,11 @@ blockquote:before {
 form, .form {
     background-color: @color-swatch1;
     border: 1px solid @color-swatch7;
-    padding: 20px 40px 10px;
-    @media @tablet {
-    	padding:10px 0px;
-    }
 }
 
 // Form Body
 .form-body {
-	margin: 0px 30px 20px;
+	margin: 10px 30px 20px;
 	@media @mobile {
 		margin: 20px;
 	}
@@ -138,7 +134,7 @@ form, .form {
 
 legend { 
 	width: 100%;
-	padding: 10px 30px;
+	padding: 30px 30px 0px;
 	background-color: @color-swatch1;
 	color: @color-swatch3;
 	@media @mobile {
@@ -163,6 +159,9 @@ select {
 	}
 }
 
+.signupform__legend {
+    display: none;
+}
 
 // Inputs: Text
 // ------------
@@ -182,12 +181,13 @@ textarea,
     }
 }
 
-.signup-form__label, .contact-form__legend, .blog-search__legend {
+.signupform__label, .contactform__legend, .blogsearch__legend {
     background-color: @color-swatch1;
     border-bottom: 0;
     text-align: center;
     font-size: @font-swatch1-font-size;
     font-weight: @font-swatch1-font-weight;
+    padding: 20px 0px 0px;
     &:after {
         border-top: 1px solid @color-swatch7;
         content: "";
@@ -198,6 +198,24 @@ textarea,
         max-width: 200px;
         width: 5%;
     }
+}
+
+.signupform__input {
+    width: 75%!important;
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+    .button--submit {
+        display: inline-block;
+        float: right;
+        min-width: 20%;
+        vertical-align: bottom;
+        margin-top: 21px;
+    }
+}
+
+.signupform__form-group {
+    .clearfix
 }
 
 // -----------------------------
