@@ -31,8 +31,9 @@
 
 // 13.   #DIVIDER (KEYLINE)
 // 14.   #PROFILE
-// 15.   #Facebook
+// 15.   #FACEBOOK
 // 16.   #YELP
+// 17.   #MAP
 
 
 // -----------------------------
@@ -462,7 +463,7 @@
 // Navigation Buttons
 .slide-navigation {
     position: absolute;
-    top: 140px;
+    top: 180px;
     width: 100%;
 }
 
@@ -711,7 +712,30 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
 // 14. #Profile
 // -----------------------------
 
-// Add styles here...
+.template-footer {
+    .twitter {
+        background-color: transparent;
+        border: 0;
+    }
+    .map__embed-wrap {
+        min-width: 400px;
+    }
+    .twitter__avatar {
+        margin: 0px auto 10px;
+        display: table;
+    }
+    .signupform__input {
+        width: 100%!important;
+        text-align: center;
+    }
+    .signupform__label {
+        padding: 0;
+        color: @font-swatch4-color;
+        &:after {
+            margin: 10px auto 10px;
+        }
+    }
+}
 
 
 
@@ -728,9 +752,20 @@ input.input[type=email],input.input[type=search], .contact-form__textarea {
 
 
 // -----------------------------
-// 16. #Facebook
+// 16. Yelp
 // -----------------------------
 
 .yelp-reviews__review-title {
     font-size: @font-swatch4-font-size;
+}
+
+
+
+
+// -----------------------------
+// 17. MAP
+// -----------------------------
+
+.bk-map.map.widget__map {
+    height: initial;
 }
