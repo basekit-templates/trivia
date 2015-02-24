@@ -211,6 +211,9 @@
 
 .ecomproductslist__fieldset--search {
     float: left;
+    @media @tablet {
+        float: inherit;
+    }
 }
 
 .product-listing__listing-section {
@@ -228,6 +231,10 @@
     margin: 30px 30px 20px;
 }
 
+.ecomproductslist__input {
+    padding: 3px 30px;
+}
+
 .product-listing__form-group {
     @media @mobile {
         display:block;
@@ -241,8 +248,14 @@
         }
 }
 
+.ecomproductslist__form-group {
+    @media @tablet {
+        width: 100%;
+    }
+}
+
 select {
-    @media @mobile {
+    @media @tablet {
         width:100%;
     }
 }

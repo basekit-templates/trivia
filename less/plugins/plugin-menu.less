@@ -4,7 +4,7 @@
 
 // Menu Navigation
 .widget__menusections {
-	border: 1px solid @color-swatch7;
+	border-bottom: 1px solid @color-swatch7;
 	text-align: center;
 }
 
@@ -70,7 +70,12 @@
 
 // Featured Section
 .menu-section--featured, .menu-item--featured  {
-    border: 1px solid darken(@color-swatch7,3%);
+    border: 1px solid darken(@color-swatch7,2%);
+    padding: 5px;
+    background-color: @color-swatch1;
+}
+
+.menu-section--featured {
     padding: 20px;
 }
 
@@ -86,7 +91,8 @@
 .menu-section--featured, 
 .menu-item--featured {
     .menu__item-article {
-        border: 1px solid @color-swatch1;
+        border: 1px solid darken(@color-swatch7,2%);
         padding: 20px;
+        background-color: @color-swatch1;
     }
 }

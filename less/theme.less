@@ -110,6 +110,9 @@ blockquote:before {
 form, .form {
     background-color: @color-swatch1;
     border: 1px solid @color-swatch7;
+    @media @tablet {
+        text-align: center;
+    }
 }
 
 // Form Body
@@ -136,7 +139,7 @@ legend {
 	width: 100%;
 	padding: 30px 30px 0px;
 	background-color: @color-swatch1;
-	color: @color-swatch3;
+	color: @font-swatch4-color;
 	@media @mobile {
 		padding: 6px 20px;
 	}
