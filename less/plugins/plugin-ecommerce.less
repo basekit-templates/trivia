@@ -71,6 +71,12 @@
     }
 }
 
+.ecomproduct__product-content {
+    @media @tablet {
+        text-align: center;
+    }
+}
+
 .product-attributes {
     margin: 10px 0;
     clear: both;
@@ -98,7 +104,7 @@
     color: @font-swatch7-color;
     margin: 20px 0;
 }
-
+ecomproduct__product-content
 
 // -----------------------------
 // 2. #Product List
@@ -108,7 +114,10 @@
 .product-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;     
+    justify-content: space-between;
+    .button {
+        padding: 3px 30px;
+    }     
 }
 
 // Product Item
@@ -130,6 +139,7 @@
 
 .product-item-details {
     text-align: center;
+    margin-top: 0;
 }
 
 // -----------------------------
@@ -225,6 +235,15 @@
 .ecomproductslist__legend {
     padding: 10px 30px 10px;
     border-bottom: 1px solid @color-swatch7;
+    @media @tablet {
+         border-top: 1px solid @color-swatch7;
+    }
+}
+
+.ecomproductslist__fieldset--search .ecomproductslist__legend {
+    @media @tablet {
+         border-top: 0;
+    }
 }
 
 .ecomproductslist__form-body {
