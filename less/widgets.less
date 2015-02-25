@@ -41,7 +41,10 @@
 // -----------------------------
 
 .widget__logo {
-    margin-right:10px;
+    margin-right: 10px;
+    @media @tablet {
+        margin-right: 0;
+    }
 }
 
 .logo-link {
@@ -201,7 +204,6 @@
     -o-background-size: cover;
     background-size: cover;
     min-height: 100px;
-    height: 500px;
     display: flex;
     display: -webkit-box;
     display: -moz-box;
@@ -209,12 +211,6 @@
     display: -webkit-flex;
     align-items: center;
     justify-content: center;
-    @media @tablet {
-        height:400px;
-    }
-    @media @mobile {
-        height:300px;
-    }
 }
 
 
@@ -289,9 +285,18 @@
 }
 
 // Image Widget
-.image-widget__image-title,
-.image-widget__image-description {
+.imagewidget__image-title,
+.imagewidget__image-description {
+    color: @font-swatch4-color;
+    font-size: @font-swatch4-font-size;
+    line-height: @font-swatch4-line-height;
+    text-shadow: none;
+}
+
+.imagewidget__image-description {
     color: @font-swatch5-color;
+    font-size: @font-swatch5-font-size;
+    line-height: @font-swatch5-line-height;
 }
 
 
