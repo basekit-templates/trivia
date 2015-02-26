@@ -203,7 +203,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 100px;
+    min-height: 500px;
     display: flex;
     display: -webkit-box;
     display: -moz-box;
@@ -211,6 +211,12 @@
     display: -webkit-flex;
     align-items: center;
     justify-content: center;
+    @media @tablet {
+        min-height: 400px;
+    }
+    @media @mobile {
+        min-height: 200px;
+    }
 }
 
 
