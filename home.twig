@@ -4,13 +4,15 @@
 
 {% include "includes/header.twig" %}
 
-{{widget('feature', 'featurehome', {
-	"header": "profile", 
-	"defaultBgImg": asset('images/feature-bg.jpg'),
-	'positionTopPercentage': '0',
-	'showBtn': true,
-	buttonText: "Lorem Ipsum"
-})|raw}}
+<div class="homepage-feature">
+	{{widget('feature', 'featurehome', {
+		"header": "profile", 
+		"defaultBgImg": asset('images/feature-bg.jpg'),
+		'positionTopPercentage': '0',
+		'showBtn': true,
+		buttonText: "Lorem Ipsum"
+	})|raw}}
+</div>
 
 <!-- Container -->
 <div class="container">

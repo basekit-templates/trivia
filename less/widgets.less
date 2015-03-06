@@ -55,7 +55,6 @@
 }
 
 // Header Logo Flexbox
-
 .header-logo {
     // Flex child
     -webkit-box-ordinal-group: 1;
@@ -92,6 +91,8 @@
 }
 
 
+
+
 // -----------------------------
 // 2.  #Company Name
 // -----------------------------
@@ -114,7 +115,6 @@
 }
 
 // Header  Companyname Flexbox
-
 .header-companyname {
     // Flex child
     -webkit-box-ordinal-group: 1;
@@ -141,12 +141,13 @@
 }
 
 
+
+
 // -----------------------------
 // 3.  #Navigation
 // -----------------------------
 
 // Header Extended Navigation
-
 .header-extendednavigation {
     // Flex child
     -webkit-box-ordinal-group: 1;
@@ -189,6 +190,8 @@
 }
 
 
+
+
 // -----------------------------
 // 4.  #Feature
 // -----------------------------
@@ -196,7 +199,7 @@
 // Feature Background (Image)
 // --------------------------
 
-.feature__background-image {
+.homepage-feature .feature__background-image {
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-background-size: cover;
@@ -271,7 +274,26 @@
 // --------------------------
 
 .default-feature .feature__background-image {
-    height:150px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 150px;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    @media @tablet {
+        min-height: 400px;
+    }
+    @media @mobile {
+        min-height: 200px;
+    }
 }
 
 
@@ -337,6 +359,9 @@
     position: relative;
     width: 32%;
     margin-bottom: 2%;
+    @media @tablet {
+        width: 48%;
+    }
     // Display 100% at mobile
     @media @mobile {
         width: 100%;
@@ -355,25 +380,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    @media @tablet {
-        height: 210px;
-    }
-}
-
-// Hide Img Element
-.gallery__image {
-    display: none;
-}
-
-
-// Gallery Image Captions
-// ----------------------
-
-// Hide Caption
-.gallery__image-link {
     margin: 0;
     padding: 5px 10px 20px 15px;
-    display: block;
     &:after {
         -webkit-transition: all 1s ease;
         -moz-transition:    all 1s ease;
@@ -397,6 +405,15 @@
         }
     }
 }
+
+// Hide Img Element
+.gallery__image {
+    display: none;
+}
+
+
+// Gallery Image Captions
+// ----------------------
 
 // Show Caption
 .image-link:hover .gallery__caption {
@@ -431,6 +448,9 @@
         text-decoration: none;
     }
 }
+
+
+
 
 // -----------------------------
 // 7.  #Slideshow
@@ -509,11 +529,24 @@
 }
 
 .pause-toggle {
-    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0px auto;
+    display: table;
+    width: 110px;
 }
 
-.control-text {
-    display:none;
+.responsiveslideshow__pause-toggle {
+    &:before {
+        margin-right: 0;
+    }
+}
+
+.responsiveslideshow__control-text {
+    display: none;
 }
 
 // Slideshow Pagination
@@ -658,6 +691,9 @@ input.input[type=search],
     float: initial;
 }
 
+
+
+
 // -----------------------------
 // 11.  #Social Icons
 // -----------------------------
@@ -685,7 +721,6 @@ input.input[type=search],
 
 
 
-
 // -----------------------------
 // 12.  #Twitter Feed
 // -----------------------------
@@ -708,7 +743,6 @@ input.input[type=search],
 }
 
 // Content
-
 .twitter__avatar {
     display: inline-block;
     margin-right: 20px;
