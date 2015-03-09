@@ -3,35 +3,38 @@
 {% block content %}
 
 {% include "includes/header.twig" %}
+<div class="bk-pt-default">
+	<div class="default-feature">
+		{{widget('feature', 'featuredefault', {
+			"header": "profile", 
+			"defaultBgImg": asset('images/feature-default.jpg'),
+			'positionTopPercentage': '0',
+			'showBtn': false,
+			buttonText: "Lorem Ipsum"
+		})|raw}}
+	</div>
+	
+	<!-- Container -->
+	<div class="container">
+	
+		<!-- Page Content -->
+		<section class="template-content">
+	
+			<!-- Template Widgets -->
+			
+			<!-- End Template Widgets -->
+	
+			<!-- Main Widet Zone -->
+		   	{{zone('main')|raw}}
+	
+		</section>
+		<!-- End Page Content -->
+	
+	</div>
+	<!-- End Container -->
 
-<div class="default-feature">
-	{{widget('feature', 'featuredefault', {
-		"header": "profile", 
-		"defaultBgImg": asset('images/feature-default.jpg'),
-		'positionTopPercentage': '0',
-		'showBtn': false,
-		buttonText: "Lorem Ipsum"
-	})|raw}}
 </div>
-
-<!-- Container -->
-<div class="container">
-
-	<!-- Page Content -->
-	<section class="template-content">
-
-		<!-- Template Widgets -->
-		
-		<!-- End Template Widgets -->
-
-		<!-- Main Widet Zone -->
-	   	{{zone('main')|raw}}
-
-	</section>
-	<!-- End Page Content -->
-
-</div>
-<!-- End Container -->
+<!-- End bk-pt-default -->
 
 {% include "includes/footer.twig" %}
 
