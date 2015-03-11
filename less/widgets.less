@@ -34,6 +34,7 @@
 // 15.   #FACEBOOK
 // 16.   #YELP
 // 17.   #MAP
+// 18.   #HR LINE
 
 
 // -----------------------------
@@ -312,6 +313,12 @@
 }
 
 // Image Widget
+
+.imagewidget__image-title {
+    font-size: @font-swatch3-font-size;
+}
+
+
 .imagewidget__image-title,
 .imagewidget__image-description {
     color: @font-swatch4-color;
@@ -333,11 +340,14 @@
 // 6.  #Gallery
 // -----------------------------
 
+// The following styles give you a three column gallery layout with a
+// coloured overlay
+
 // Gallery Layout
 // --------------
 
 // Gallery List
-.gallery__gallery-list {
+.gallery-list {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -350,59 +360,44 @@
     -moz-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 // Gallery Item
+// For screen size larger than 920px. Media queries below.
 .gallery__gallery-item {
     position: relative;
     width: 32%;
-    margin-bottom: 2%;
-    @media @tablet {
-        width: 48%;
+    margin-bottom: 15px;
+    .image-title {
+        font-family:@font-swatch9-font-family;
+        font-size:@font-swatch9-font-size;
+        font-weight: @font-swatch9-font-weight;
+        line-height:@font-swatch9-line-height;
+        color: @font-swatch9-color;
+        letter-spacing: @font-swatch9-letter-spacing;
     }
-    // Display 100% at mobile
-    @media @mobile {
-        width: 100%;
-        margin-bottom: 4%;
+    .image-description {
+        font-family:@font-swatch5-font-family;
+        font-size:@font-swatch5-font-size;
+        font-weight: @font-swatch5-font-weight;
+        line-height:@font-swatch5-line-height;
+        color: @font-swatch9-color;
+        letter-spacing: @font-swatch5-letter-spacing;
     }
 }
-
 
 // Gallery Images
 // --------------
 
 // Use Background-image Method
+// For screen size larger than 920px. Media queries below.
 .gallery__image-link {
     display: block;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin: 0;
-    padding: 5px 10px 20px 15px;
     padding-bottom: 100%;
-    &:after {
-        -webkit-transition: all 1s ease;
-        -moz-transition:    all 1s ease;
-        -ms-transition:     all 1s ease;
-        -o-transition:      all 1s ease;
-        transition:         all 1s ease;
-        background-color:fade(@color-swatch3,0%);
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 100%;
-        border: 10px solid transparent;
-        box-sizing: border-box;
-        top: 0;
-        left: 0;
-        height: 280px;
-    }
-    &:hover {
-        &:after {
-            background-color: fade(@color-swatch3, 30%);
-        }
-    }
 }
 
 // Hide Img Element
@@ -410,21 +405,144 @@
     display: none;
 }
 
-
 // Gallery Image Captions
 // ----------------------
 
+// Hide Caption
+.gallery__caption {
+    display: none;
+    margin: 0;
+    padding: 20px;
+    background-color: hsla(hue(@color-swatch3),
+                           saturation(@color-swatch3),
+                           lightness(@color-swatch3), .95);
+}
+
 // Show Caption
-.image-link:hover .gallery__caption {
+.gallery__figure:hover .gallery__caption {
+    text-align: center;
     position: absolute;
     top: 0;
     display: block;
     width: 100%;
     height: 100%;
+    padding: 25px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+// Line below title
+.gallery__image-title:after {
+    display: block;
+    content: '';
+    height: 1px;
+    width: 0;
+    background-color: @color-swatch1;
+    margin: .5em auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    @media @mobile {
+        display: none;
+    }
+}
+.gallery__figure:hover .gallery__caption .image-title:after { width: 70px; }
+
+
+// Media queries for Image Gallery
+// -------------------------------
+
+// Screen size between 769px and 920px
+@media only screen and (max-width : 920px) and (min-width : 769px) {
+    .gallery__image-link {
+        height: 380px;
+    }
+    .gallery__figure:hover .gallery__caption:before {
+        top: 3px;
+        left: 3px;
+        right: 3px;
+        bottom: 3px;
+    }
+    .gallery__figure:hover .gallery__caption {
+        padding: 9px 15px;
+    }
+    .gallery-item {
+        .image-title {
+            font-size: @font-swatch9-font-size;
+            line-height:@font-swatch9-line-height;
+        }
+    }
+}
+
+// Screen size smaller than 850px
+@media only screen and (max-width : 850px) {
+    .gallery-item {
+        .image-description {
+            font-size: bkscale(@font-swatch9-font-size,.9);
+            line-height:bkscale(@font-swatch9-line-height,.9);
+        }
+    }
+}
+
+//Tablet
+@media @tablet {
+    .gallery__image-link {
+        height: 300px;
+    }
+    .gallery-item {
+        .image-description {
+            display: none;
+        }
+    }
+    .gallery__figure:hover .gallery__caption .image-title:after {
+        display: none;
+    }
+}
+
+// Screen size smaller than 600px
+@media only screen and (max-width: 600px) {
+    .gallery__image-link {
+        height: 200px;
+    }
+    .gallery__gallery-item {
+        width: 100%;
+        margin: 0 auto 20px;
+    }
 }
 
 .gallery__caption {
@@ -433,7 +551,7 @@
     margin: 0;
     .image-title, 
     .image-description {
-        color: @font-swatch4-color;
+        color: @font-swatch8-color;
         text-shadow: none;
     }
     .image-title {
@@ -563,6 +681,7 @@
 .button--pagination.responsiveslideshow__button {
     vertical-align: top;
     padding: 5px 20px;
+    margin-bottom: 5px;
 }
 
 .responsiveslideshow .pagination-item.selected .button--pagination {
@@ -581,10 +700,10 @@
 //  --------------
 
 button, .button {
-    padding:8px 30px;
-    background-color:transparent;
-    border:1px solid @color-swatch4;
-    color:@color-swatch4;
+    padding: 8px 30px;
+    background-color: transparent;
+    border: 1px solid @color-swatch4;
+    color: @color-swatch4;
 }
 
 .feature__button {
@@ -609,7 +728,7 @@ button, .button {
 //  8.4  #CLICK TO CALL
 //  --------------
 
-.companyphone__phone-number-link {
+.clicktocall__phone-number-link {
     &:hover {
         text-decoration: none;
     }   
@@ -632,6 +751,15 @@ button, .button {
     }
 }
 
+//  8.6 #SLIDESHOW
+//  --------------
+
+.responsiveslideshow__next-button, 
+.responsiveslideshow__previous-button,
+.responsiveslideshow__pause-toggle {
+    background-color: @color-swatch3;
+    color: @font-swatch8-color;
+}
 
 
 
@@ -641,7 +769,7 @@ button, .button {
 
 // Body
 .contactform__form-body {
-    margin: 10px 0 30px;
+    margin: 20px 0 30px;
 }
 
 .contactform__fieldset {
@@ -667,11 +795,11 @@ input.input[type=search],
 
 // Button
 .contact-form__input {
-    margin:0px auto;
-    display:table;
-    border:0;
+    margin: 0px auto;
+    display: table;
+    border: 0;
     padding: 8px 30px;
-    border:1px solid @color-swatch4;
+    border: 1px solid @color-swatch4;
 }
 
 
@@ -704,15 +832,15 @@ input.input[type=search],
 // -----------------------------
 
 .social-list {
-    padding:0;
+    padding: 0;
 }
 
 .social-item {
-    margin-bottom:10px;
+    margin-bottom: 10px;
 }
 
 .socialicons__social-item a:hover {
-    color:@font-swatch9-color;
+    color: @font-swatch9-color;
     text-decoration: none;
 }
 
@@ -721,6 +849,7 @@ input.input[type=search],
     border: 1px solid @color-swatch4;
     padding: 10px;
     display: inline-block;
+        color: @font-swatch4-color;
 }
 
 
@@ -871,13 +1000,27 @@ input.input[type=search],
     font-size: @font-swatch4-font-size;
 }
 
+.yelpreview__review-item {
+    list-style: none;
+}
 
 
 
 // -----------------------------
-// 17. MAP
+// 17. #Map
 // -----------------------------
 
 .bk-map.map.widget__map {
     height: initial;
+}
+
+
+
+
+// -----------------------------
+// 18. #Hr Line
+// -----------------------------
+
+hr.rule {
+    background-color: @color-swatch7;
 }
