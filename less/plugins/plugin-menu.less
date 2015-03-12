@@ -4,8 +4,11 @@
 
 // Menu Navigation
 .widget__menusections {
-	border-bottom: 1px solid @color-swatch7;
+	border-bottom: 1px dashed @color-swatch7;
 	text-align: center;
+    @media @mobile {
+        display: none;
+    }
 }
 
 .menusections-list {
@@ -23,6 +26,9 @@
     color: @color-swatch3;
     margin-right: 0;
     padding: 0 20px;
+    @media @mobile {
+        display:none;
+    }
 }
 
 .menusections-item:last-child:after {
@@ -43,8 +49,16 @@
 	text-align:center;
 }
 
+.menu__item-header {
+    margin-top: 10px;
+}
+
 .menu-item {
     display: block;
+}
+
+.item-content {
+    margin-top: 0;
 }
 
 .menu__section-header {
@@ -64,6 +78,10 @@
         max-width: 200px;
         width: 5%;
     }
+}
+
+.menu__item-subtitle {
+    font-style: italic;
 }
 
 .menu__dietary-item {
@@ -107,4 +125,11 @@
         padding: 20px;
         background-color: @color-swatch1;
     }
+}
+
+
+// Section Footer
+.menu__section-footer {
+    border: 1px solid @color-swatch7;
+    padding: 10px 10px 0px;
 }
