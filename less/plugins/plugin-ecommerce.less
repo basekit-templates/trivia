@@ -281,15 +281,25 @@
 // -------------------------------
 
 .ecomproductslist__fieldset--search {
-    float: left;
+    float: right;
+    width: 40%;
     @media @tablet {
-        float: inherit;
+        float: initial;
+        width:100%;
+    }
+}
+
+.ecomproductslist__fieldset--filters {
+    float:left;
+    width: 60%;
+    @media @tablet {
+        width:100%;
     }
 }
 
 .product-listing__listing-section {
     @media @mobile {
-        text-align:center;
+        text-align: center;
     }
 }
 
