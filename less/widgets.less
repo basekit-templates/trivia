@@ -209,7 +209,7 @@
     min-height: 500px;
     display: table;
     min-height: 500px;
-    height: 600px;
+    height: 500px;
     width: 100%;
     @media @tablet {
         min-height: 400px;
@@ -228,6 +228,7 @@
     max-width: 80%;
     vertical-align: middle;
     display: table-cell;
+    background-color: fade(@color-swatch4, 10%);
     @media @tablet {
         max-width:100%;
     }
@@ -274,12 +275,7 @@
 
 .default-feature .feature__background-image {
     min-height: 150px;
-    @media @tablet {
-        min-height: 400px;
-    }
-    @media @mobile {
-        min-height: 200px;
-    }
+    height: 150px;
 }
 
 
@@ -804,6 +800,9 @@ input.input[type=search],
     display: table;
     width: 70%;
     text-align: center;
+    @media @mobile {
+        width: 80%;
+    }
 }
 
 .signupform__input {
@@ -944,6 +943,9 @@ input.input[type=search],
     }
     .signupform__form-body {
         margin: 20px auto 0px;
+        @media @mobile {
+            margin: 20px auto 10px;
+        }
     }
     .profile__signupform {
         min-width: 400px;
@@ -951,7 +953,9 @@ input.input[type=search],
             margin: 10px 0;
         }
         @media @mobile {
-            min-width: 280px;
+            min-width: 250px;
+            max-width: 280px;
+            margin: 0px auto;
         }
     }
     .socialicons__social-item a:hover {

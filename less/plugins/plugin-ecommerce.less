@@ -62,6 +62,25 @@
     margin: 20px 0px;
 }
 
+.ecomproductslist__listing-title,
+.ecombasketsummary__summary-title,
+.ecomproduct__product-title,
+.ecomfeaturedproducts__listing-title {
+    &:after {
+        border-top: 1px solid @color-swatch7;
+        content: "";
+        display: block;
+        position: relative;
+        margin: 20px auto 15px;
+        min-width: 60px;
+        max-width: 200px;
+        width: 5%;
+    }
+    @media @tablet {
+        text-align: center;
+    }
+}
+
 .ecomproduct__image-link {
     background: no-repeat;
 }
