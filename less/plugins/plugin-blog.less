@@ -16,7 +16,7 @@
 
 // Blog Post List
 .blogpostlist__post-header {
-    margin-top: 25px;
+    margin: 25px auto 0;
 }
 
 .post-content {
@@ -48,8 +48,7 @@
     margin: 0px auto;
 }
 
-.post-article {
-	padding: 0 10%;
+.blogpostlist .post-article {
     border: 1px solid @color-swatch7;
 	@media @mobile {
 		padding:0;
@@ -60,17 +59,14 @@
     display: inline-block;
 }
 
-.blogpostlist,
-.blogpost {
-    .image-link {
-        text-align: center;
-    }
+.blogpostlist__image-link {
+  margin: 25px 25px 0;
 }
 
 // Blog Post List Footer
 .blogpostlist__post-footer {
-	width: 100%;
-    padding: 20px;
+    width: 100%;
+    padding: 25px;
     text-align: center;
     .timestamp {
         display: inline-block;
@@ -80,16 +76,33 @@
     }
 }
 
-// Blog Post
+// List and Single Post
 
-.post-body.blogpost__post-body {
-    margin: 0 auto;
-    max-width: 700px;
+.blogpostlist,
+.blogpost {
+    .image-link {
+        text-align: center;
+    }
 }
+
+.post-body.blogpost__post-body,
+.blogpostlist__post-header,
+.blogpostlist__post-excerpt {
+    max-width: 700px;
+    padding: 0 25px;
+}
+
+.post-body.blogpost__post-body,
+.blogpostlist__post-excerpt {
+    margin: 0 auto;
+}
+
+// Blog Post
 
 .blogpost__post-content {
 	text-align: center;
 }
+
 
 .blogpost__post-attributes a,
 .blogpostlist__post-excerpt a {
