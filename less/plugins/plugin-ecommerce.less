@@ -39,6 +39,8 @@
     width: 50%;
     @media @tablet {
         width: 100%;
+        padding: 0;
+        margin-top: 20px;
     }
 }
 
@@ -71,13 +73,15 @@
         content: "";
         display: block;
         position: relative;
-        margin: 20px auto 15px;
         min-width: 60px;
         max-width: 200px;
         width: 5%;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
     @media @tablet {
         text-align: center;
+        margin: 20px auto 15px;
     }
 }
 
@@ -153,6 +157,13 @@
 }
 
 // Product Item
+
+.title-link {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 .product-item {
     position: relative;
     width: 32%;
@@ -339,7 +350,7 @@
 
 .ecomproductslist__fieldset--search .ecomproductslist__legend {
     @media @tablet {
-         border-top: 0;
+        display: none;
     }
 }
 
