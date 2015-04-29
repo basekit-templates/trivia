@@ -91,6 +91,10 @@
 	}
 }
 
+.navigation-list--children {
+    display: block;
+}
+
 .navigation-list--children, .default-page .navigation-list--children {
 	background-color:@color-swatch1;
 	border: 1px solid @color-swatch7;
@@ -101,6 +105,9 @@
 	@media @tablet {
 		position: relative;
 		top: 0;
+        .navigation-item {
+            display: block;
+        }
 		.navigation-item:hover & {
             display: block;
 			// display: none;
@@ -208,7 +215,8 @@
         }
     }
     .navigation-body {
-        display: none;
+        // display: none;
+        display: block;
         .open & {
             display: block;
         }
