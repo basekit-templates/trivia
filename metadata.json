@@ -137,11 +137,11 @@
         },
         "font9": {
             "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
-            "font-size": "16px",
+            "font-size": "14px",
             "font-weight": "300",
             "line-height": "inherit",
             "color": "@color-swatch1",
-            "letter-spacing": "3px"
+            "letter-spacing": "1px"
         },
         "font10": {
             "font-family": "\"Roboto\", Geneva, \"Lucida Console\", sans-serif",
