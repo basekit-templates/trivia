@@ -152,14 +152,17 @@ form,
     }
     .button--pagination {
         background-color: @color__slideshow-pagination-item--background;
-        color: @color__slideshow-pagination-item--background--selected;
-        &:hover {
-            color: @color__slideshow-pagination-item--text--hover;
-        }
+        color: @color__slideshow-pagination-item--text;
     }
     .selected .button--pagination {
-        background-color: @slideshow__pagination-item-bg-color--selected;
+        color: @color-swatch1;
     }
+}
+
+.responsiveslideshow__next-button, 
+.responsiveslideshow__previous-button, 
+.responsiveslideshow__pause-toggle {
+	color: @color-swatch1!important;
 }
 
 .twitter {
