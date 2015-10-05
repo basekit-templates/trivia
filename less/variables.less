@@ -37,6 +37,7 @@ button,
 	color: @color__button--text;
 	&:hover {
 		background-color: @color__button--background--hover;
+		color: @color__button--text--hover;
 	}
 }
 
@@ -171,6 +172,9 @@ form,
 		background-color: @color__socialicons--icon--background;
 		&::before {
 			color: @color__socialicons--icon;
+			&:hover {
+				color: @color__socialicons--icon--hover;
+			}
 		}
 	}
 }
