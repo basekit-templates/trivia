@@ -223,11 +223,6 @@
             "color__slideshow-pagination-item--text": "@font-swatch4-color",
             "color__slideshow-pagination-item--text--hover": "@color-swatch1"
         },
-        "socialicons": {
-            "color__socialicons--icon": "@color__primary",
-            "color__socialicons--icon--hover": "@color-swatch1",
-            "color__socialicons--text": "@font-swatch4-color"
-        },
         "blog": {
             "color__blogsearch-legend--text": "@font-swatch4-color",
             "color__blogsearch-label--text": "@font-swatch4-color",
