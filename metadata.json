@@ -170,7 +170,7 @@
             "color__p--text": "@font-swatch5-color"
         },
         "button": {
-            "color__button--background": "@transparent",
+            "color__button--background": "transparent",
             "color__button--background--hover": "@color__primary",
             "color__button--text": "@font-swatch7-color",
             "color__button--text--hover": "@color-swatch1"
