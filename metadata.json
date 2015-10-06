@@ -224,6 +224,9 @@
             "color__slideshow-pagination-item--text": "@font-swatch4-color",
             "color__slideshow-pagination-item--text--hover": "@color-swatch1"
         },
+        "twitter": {
+            "color__twitter--background": "@color-swatch1",
+        },
         "socialicons": {
             "color__socialicons--icon": "@color__primary",
             "color__socialicons--icon--hover": "@color-swatch1",
