@@ -247,7 +247,7 @@
             "color__ecombasket-button--text": "@color-swatch1"
         },
         "menu": {
-            "color__menu--background": "transparent",
+            "color__menu--background": "transparent"
         }
     }
 }
