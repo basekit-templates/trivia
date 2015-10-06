@@ -185,7 +185,6 @@
             "color__sidebar--background": "@color-swatch2"
         },
         "navigation": {
-            "color__navigation--background": "@color-swatch1",
             "color__navigation--text": "@font-swatch6-color",
             "color__navigation--text--hover": "@color__primary",
             "color__navigation--text--selected": "@color__primary",
