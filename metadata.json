@@ -218,7 +218,6 @@
             "color__slideshow-caption--background": "@color-swatch5",
             "color__slideshow-title--text": "@color-swatch1",
             "color__slideshow-description--text": "@color-swatch1",
-            "color__slideshow-pagination-item--background": "@color-swatch1",
             "color__slideshow-pagination-item--background--selected": "@color__secondary",
             "color__slideshow-pagination-item--text": "@font-swatch4-color",
             "color__slideshow-pagination-item--text--hover": "@color-swatch1"
@@ -226,7 +225,7 @@
         "blog": {
             "color__blogsearch-legend--text": "@font-swatch4-color",
             "color__blogsearch-label--text": "@font-swatch4-color",
-            "color__blogpostlist-title--text": "@font-swatch4-color",
+            "color__blogpostlist-title--text": "@color-swatch2",
             "color__blogpost-title--text": "@font-swatch4-color"
         },
         "ecommerce": {
