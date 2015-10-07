@@ -181,9 +181,6 @@
         "footer": {
             "color__footer--background": "@color__primary"
         },
-        "sidebar": {
-            "color__sidebar--background": "@color-swatch2"
-        },
         "navigation": {
             "color__navigation--text": "@font-swatch6-color",
             "color__navigation--text--hover": "@color__primary",
@@ -199,46 +196,6 @@
             "color__feature-button--text": "@color-swatch1",
             "color__feature-button--background": "transparent",
             "color__feature-button--background--hover": "@color__primary"
-        },
-        "forms": {
-            "color__form-legend--text": "@font-swatch4-color",
-            "color__form-label--text": "@font-swatch4-color"
-        },
-        "image": {
-            "color__image-caption--background": "lighten(@color-swatch1, 5%)",
-            "color__image-title--text": "@font-swatch4-color",
-            "color__image-description--text": "@font-swatch5-color"
-        },
-        "gallery": {
-            "color__gallery-caption--background": "@color-swatch5",
-            "color__gallery-title--text": "@color-swatch1",
-            "color__gallery-description--text": "@color-swatch1"
-        },
-        "slideshow": {
-            "color__slideshow-caption--background": "@color-swatch5",
-            "color__slideshow-title--text": "@color-swatch1",
-            "color__slideshow-description--text": "@color-swatch1",
-            "color__slideshow-pagination-item--background--selected": "@color__secondary",
-            "color__slideshow-pagination-item--text": "@font-swatch4-color",
-            "color__slideshow-pagination-item--text--hover": "@color-swatch1"
-        },
-        "blog": {
-            "color__blogsearch-legend--text": "@font-swatch4-color",
-            "color__blogsearch-label--text": "@font-swatch4-color",
-            "color__blogpostlist-title--text": "@color-swatch2",
-            "color__blogpost-title--text": "@font-swatch4-color"
-        },
-        "ecommerce": {
-            "color__ecomproductslist-legend--text": "@font-swatch4-color",
-            "color__ecomproductslist-label--text": "@font-swatch4-color",
-            "color__ecomproductslist-product-title--text": "@font-swatch4-color",
-            "color__ecomproductslist-product-item--background": "@color-swatch1",
-            "color__ecomproduct-images--background": "darken(@color-swatch1,5%)",
-            "color__ecomproduct-title--text": "@font-swatch4-color",
-            "color__ecomproduct-price--text": "@font-swatch4-color",
-            "color__ecombasket-button--background": "@color__primary",
-            "color__ecombasket-button--background--hover": "darken(@color__primary, 10%)",
-            "color__ecombasket-button--text": "@color-swatch1"
         }
     }
 }
