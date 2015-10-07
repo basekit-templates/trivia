@@ -50,6 +50,15 @@ button,
 }
 
 .extendednavigation {
+	&__navigation--text {
+		color: @color__navigation--text;
+		&:hover {
+			color: @color__navigation--text--hover;
+		}
+	}
+	&__navigation-item.selected {
+		color: @color__navigation-item--selected;
+	}
 	&__navigation-body {
 		background-color: @color__navigation-list--background;
 	}
@@ -58,9 +67,6 @@ button,
 		&:hover {
 			color: @color__navigation-item--selected;
 		}
-	}
-	&__navigation-item.selected {
-		color: @color__navigation-item--selected;
 	}
 }
 
