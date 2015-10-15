@@ -50,23 +50,14 @@ button,
 }
 
 .extendednavigation {
-	&__navigation--text {
+	.navigation-item .item-name {
 		color: @color__navigation--text;
 		&:hover {
 			color: @color__navigation--text--hover;
 		}
 	}
-	&__navigation-item.selected {
-		color: @color__navigation-item--selected;
-	}
-	&__navigation-body {
-		background-color: @color__navigation-list--background;
-	}
-	&__item-name.item-name {
-		color: @color__navigation-item--text;
-		&:hover {
-			color: @color__navigation-item--selected;
-		}
+	&__navigation-item.selected > .item-name {
+		color: @color__navigation--text--selected;
 	}
 }
 
@@ -95,5 +86,12 @@ form,
 	legend,
 	.legend {
 		color: @color__form-legend--text;
+	}
+}
+
+.twitter {
+	background-color: @color__twitter--background;
+	&__tweet-item {
+		background-color: @color__twitter-item--background;
 	}
 }

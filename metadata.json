@@ -183,11 +183,8 @@
         },
         "navigation": {
             "color__navigation--text": "@font-swatch6-color",
-            "color__navigation--text--hover": "@color__primary",
-            "color__navigation--text--selected": "@color__primary",
-            "color__navigation-list--background": "@color-swatch1",
-            "color__navigation-item--text": "@font-swatch6-color",
-            "color__navigation-item--selected": "@color__primary"
+            "color__navigation--text--hover": "@font-swatch6-color",
+            "color__navigation--text--selected": "@font-swatch6-color-hover"
         },
         "feature": {
             "color__feature--background": "@color-swatch4",
@@ -200,6 +197,10 @@
         "forms": {
             "color__form--background": "transparent",
             "color__form-legend--text": "@color-swatch4"
+        },
+        "twitter": {
+            "color__twitter--background": "@color-swatch1",
+            "color__twitter-item--background": "@color-swatch1"
         }
     }
 }
