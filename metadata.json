@@ -7,7 +7,7 @@
         "es": ["negocios", "corporativo", "empresa", "corporativo", "profesional", "minimalista", "limpio", "simple"],
         "pt": ["negócio", "corporativo", "companhia", "corporação", "eleição", "profissional", "minimalista", "limpo", "simples"]
     },
-    "pageTypes":["home"],
+    "pageTypes":["home", "video"],
     "templateType":"standard",
     "widgetVersion":2,
     "images":[

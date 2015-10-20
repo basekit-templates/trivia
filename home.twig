@@ -1,18 +1,12 @@
 {% extends "layout.twig" %}
-
 {% block content %}
+
 
 {% include "includes/header.twig" %}
 
-<div class="homepage-feature">
-	{{widget('feature', 'featurehome', {
-		"header": "profile", 
-		"defaultBgImg": asset('images/feature-bg.jpg'),
-		'positionTopPercentage': '0',
-		'showBtn': true,
-		buttonText: "Lorem Ipsum"
-	})|raw}}
-</div>
+
+{% include "includes/video.twig" %}
+
 
 <!-- Container -->
 <div class="container">
@@ -20,19 +14,14 @@
 	<!-- Page Content -->
 	<section class="template-content">
 
-		<!-- Template Widgets -->
-		
-		<!-- End Template Widgets -->
-
-		<!-- Main Widet Zone -->
+		<!-- Main Widget Zone -->
 	   	{{zone('main')|raw}}
 
 	</section>
-	<!-- End Page Content -->
-
 </div>
-<!-- End Container -->
+
 
 {% include "includes/footer.twig" %}
+
 
 {% endblock %}

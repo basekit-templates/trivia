@@ -1,0 +1,140 @@
+
+// Allows the video container to fit 1005 of the browser height
+html, body {
+	height: 100%;
+}
+
+
+// This sets the videos height, adjust this number if your header takes up additional space
+.video-container {
+
+	// This gives the video 100% height, alter the second pixel value depending on your header/navigations height
+	height: calc(~"100% - 80px");
+
+	// This is only needed to vertically and horizontally align heading text if available
+	align-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	display: flex;
+	align-self: center;
+	flex-direction: column;
+
+	@media @mobile {
+		display: block;
+		position: relative;
+
+		// This gives the video 100% height, alter the second pixel value depending on your header/navigations height
+		height: calc(~"100% - 168px");
+	}
+
+	&.full {
+
+		// Alternate height for page with no header
+		height: 100%;
+	}
+}
+
+
+// This stops mobile slideshow overlapping entire site.
+.backstretch {
+	height: 100%!important;
+	position: absolute!important;
+}
+
+
+// Example styling for content overlay of video
+.video-heading {
+	h1 {
+		color: white;
+		font-size: 36px;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+
+		@media @mobile {
+			font-size: 26px;
+			padding-bottom: 0;
+		}
+	}
+
+	p {
+		color: rgba(255,255,255, 0.65);
+		letter-spacing: 1px;
+	}
+
+	.button {
+		border-color: white;
+		color: white;
+		font-size: 12px;
+		margin-top: 10px;
+		text-transform: uppercase;
+	}
+
+	@media @mobile {
+
+		// Moves video content overlay to the bottom of the slideshow on mobile
+		position: absolute;
+		bottom: 25px;
+		left: 20px;
+		right: 20px;
+	}
+}
+
+
+// Makes sure the content and button widget don't wrap inline whole keeping them central
+.video-heading [data-widget-type="content"], 
+.video-heading[data-widget-type="button"] {
+	text-align: center;
+    width: 100%;
+}
+
+
+// Adds overlay to video and slideshow
+.backstretch:after,
+.mbYTP_wrapper:after {
+
+	// Alter this value to change the colour / opacity of the overlay
+	background-color: rgba(0,0,0, 0.3);
+
+	content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0; 
+    bottom: 0;
+	z-index: 100;
+
+	@media @mobile {
+		// Alter this value to change the colour / opacity of the overlay
+		background-color: rgba(0,0,0, 0.4);
+	}
+}
+
+
+// YouTube controls container
+.inlinePlayer {
+
+	// Alter this value to change the colour / opacity of the background
+	background-color: rgba(0,0,0, 0.25);
+
+	color: white;
+	padding: 20px 30px;
+	bottom: 0;
+	right: 0;
+}
+
+
+// Overides max-width iframe value that breaks video scaling - no need to change
+.playerBox {
+	max-width: initial;
+}
+
+
+// Error message styling - no need to change
+.noscript-error {
+	position: relative;
+	padding: 20px;
+	background-color: rgba(233,233,233,0.2);
+	margin:0 auto;
+	text-align: center;
+	color: rgba(233,233,233,0.8);
+}
