@@ -5,7 +5,10 @@
 	<!-- Optional content overlay, these can be hidden in the editor or deleted from this file -->
 	<header class="video-heading">
 		<!-- Heading text -->
-		{{widget('content', 'feature-content', { content: '<h1>This is a heading</h1><p>This is a subtitle</p>'})|raw}}
+		{{widget('content', 'feature-content', { 
+			content: '<h1>This is a heading</h1><p>This is a subtitle</p>',
+			align: 'widget-align-center'
+		})|raw}}
 
 		<!-- Video button-->
 		{{widget('button', 'feature-button', {
@@ -18,9 +21,6 @@
 	<a id="bgndVideo" class="player"></a>
 </div>
 
-
-<!-- Includes jQuery for plugins to work -->
-<script type="text/javascript" src="{{asset('js/jquery.js')}}"></script>
 
 <!-- Custom options plus add jQuery for plugins to work correctly-->
 <script type="text/javascript">
@@ -87,17 +87,14 @@
 					// Sets where the video playback will start
 					startAt: 0,
 
-					// Sets opacity of the video from 0 to 1
-					opacity: 1,
-
-					// Sets whether the video is fullscreen ot cropped - 'true' for fullscreen, 'false' for cropped
-					optimizeDisplay: true,
-
 					// Sets where the video playback ends
 					stopAt: 20,
 
 					// Sets opacity of the video from 0 to 1
 					opacity: 1,
+
+					// Sets whether the video is fullscreen ot cropped - 'true' for fullscreen, 'false' for cropped
+					optimizeDisplay: true,
 
 					// Shows or hide the YouTube video controls - 'true' to show and 'false' to hide
 					showControls: true,
@@ -109,7 +106,7 @@
 					vol: 50,
 
 					// Activates the pause when the window looses focus
-					stopMovieOnBlue: false
+					stopMovieOnBlue: true
 				});
 				
 				if(videoMuted == false) {
