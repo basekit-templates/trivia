@@ -11,13 +11,36 @@ html, body {
 	// This gives the video 100% height, alter the second pixel value depending on your header/navigations height
 	height: calc(~"100% - 80px");
 
-	// This is only needed to vertically and horizontally align heading text if available
+	// This is needed to vertically and horizontally align the text overlaying the video
+	-webkit-align-content: center;
+	-ms-flex-line-pack: center;
 	align-content: center;
+
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
+
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
 	align-self: center;
+
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
 	flex-direction: column;
+
+	width: 100%;
 
 	@media @mobile {
 		display: block;

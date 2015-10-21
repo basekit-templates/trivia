@@ -111,10 +111,7 @@ function onYouTubePlayerAPIReady() {
 			play  : "<i></i>",
 			pause : "<span></span>",
 			mute  : "<i></i>",
-			unmute: "<span></span>",
-			onlyYT: "",
-			showSite: "",
-			ytLogo: ""
+			unmute: "<span></span>"
 		},
 		rasterImg      : "images/raster.png",
 		rasterImgRetina: "images/raster@2x.png",
