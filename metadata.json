@@ -196,11 +196,13 @@
         },
         "forms": {
             "color__form--background": "transparent",
-            "color__form-legend--text": "@color-swatch4"
+            "color__form-legend--text": "@color-swatch4",
+            "color__form-label--text": "@font-swatch5-color"
         },
         "twitter": {
             "color__twitter--background": "@color-swatch1",
-            "color__twitter-item--background": "@color-swatch1"
+            "color__twitter-item--background": "@color-swatch1",
+            "color__twitter-account-name--text": "@color-swatch6"
         }
     }
 }
