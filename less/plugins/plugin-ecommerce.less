@@ -138,6 +138,10 @@
     padding: 0;
 }
 
+.message {
+    margin: 20px 0;
+}
+
 // Basket Buttons
 .js-ecom-product-add-to-cart-btn {
     background-color: @color-swatch3;
@@ -148,6 +152,8 @@
 .ecom-product-go-to-checkout-btn {
     padding: 8px 37px 8px 36px;
 }
+
+
 
 
 // -----------------------------
@@ -234,6 +240,9 @@
     background-color: @color-swatch3;
     color: @font-swatch9-color;
 }
+
+
+
 
 // -----------------------------
 // 3. #Basket Widget
@@ -406,6 +415,13 @@
 .ecomproductslist__form-group {
     @media @tablet {
         width: 100%;
+    }
+}
+
+.ecomproductslist__form-group:nth-child(1) {
+    float: right;
+    @media @tablet {
+        float: initial;
     }
 }
 
