@@ -104,13 +104,14 @@
 }
 
 .company-link {
+    vertical-align: top;
     @media @tablet {
-        font-size: bkscale(@font-swatch10-font-size,0.8);
-        line-height: bkscale(@font-swatch10-line-height,0.8);
+        font-size: bkscale(@font__companyname--font-size,0.8);
+        line-height: bkscale(@font__companyname--line-height,0.8);
     }
     @media @mobile {
-        font-size: bkscale(@font-swatch10-font-size,0.7);
-        line-height: bkscale(@font-swatch10-line-height,0.7);
+        font-size: bkscale(@font__companyname--font-size,0.7);
+        line-height: bkscale(@font__companyname--line-height,0.7);
     }
 }
 
@@ -266,6 +267,11 @@
     }
 }
 
+.bk-pt-default .feature__headline {
+    font-size: bkscale(@font-swatch8-font-size,0.8);
+    line-height: bkscale(@font-swatch8-line-height,0.9);
+}
+
 
 // Feature Button
 // ---------------
@@ -385,7 +391,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-bottom: 100%;
+    padding-bottom: 70%;
 }
 
 // Hide Img Element

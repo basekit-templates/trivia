@@ -30,6 +30,9 @@
 .navigation-item {
 	@media @tablet {
 		width: 100%;
+        &:last-child {
+            border-bottom: 0;
+        }
 	}
 }
 
@@ -72,7 +75,7 @@
 			content: "\f054";
 			font-size: 0.8em;
 			 height: 30px;
-            margin-top: -9px;
+            margin-top: -11px;
 		}
 		.navigation-item.open & {
 			@media @tablet {
