@@ -30,9 +30,11 @@
 .navigation-item {
 	@media @tablet {
 		width: 100%;
+        &:last-child {
+            border-bottom: 0;
+        }
 	}
 }
-
 
 // Navigation Link
 .navigation-item .item-name {
@@ -72,7 +74,7 @@
 			content: "\f054";
 			font-size: 0.8em;
 			height: 31px;
-			margin-top: -2px;
+			margin-top: -11px;
 		}
 		.navigation-item.open & {
 			@media @tablet {
