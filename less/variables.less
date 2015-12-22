@@ -83,6 +83,7 @@ button,
 form,
 .form {
 	background-color: @color__form--background;
+	border: 1px solid @color__form--border;
 	legend,
 	.legend {
 		color: @color__form-legend--text;
@@ -93,12 +94,14 @@ form,
 	}
 }
 
-.twitter {
-	background-color: @color__twitter--background;
-	&__tweet-item {
-		background-color: @color__twitter-item--background;
+.socialicons {
+	&__social-name {
+		color: @color__socialicons--text;
 	}
-	&__account-link {
-		color: @color__twitter-account-name--text;
+	&__social-item {
+		background-color: @color__socialicons--icon--background;
+		&:hover {
+			background-color: @color__socialicons--icon--background--hover;
+		}
 	}
 }

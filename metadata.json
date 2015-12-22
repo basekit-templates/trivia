@@ -124,7 +124,7 @@
             "line-height": "inherit",
             "color": "@color-swatch4",
             "letter-spacing": "1px",
-            "background-color": "@color-swatch3",
+            "background-color": "@color-swatch1",
             "background-color-hover": "@color-swatch3"
         },
         "font8": {
@@ -246,13 +246,17 @@
         },
         "forms": {
             "color__form--background": "transparent",
+            "color__form--border": "@color-swatch7",
             "color__form-legend--text": "@color-swatch4",
             "color__form-label--text": "@font-swatch5-color"
         },
-        "twitter": {
-            "color__twitter--background": "@color-swatch1",
-            "color__twitter-item--background": "@color-swatch1",
-            "color__twitter-account-name--text": "@color-swatch6"
-        }
+        "socialicons": {
+            "color__socialicons--icon": "@font-swatch7-color",
+            "color__socialicons--icon--hover": "@color-swatch1",
+            "color__socialicons--icon--background": "transparent",
+            "color__socialicons--icon--background--hover": "@color-swatch3",
+            "color__socialicons--text": "@font-swatch7-color",
+            "color__socialicons--border": "@color-swatch3"
+        },
     }
 }
