@@ -282,12 +282,26 @@
     color: @color__feature-headline--text;
 }
 
-// Default Page Feature
+// Default Page Title
 // --------------------------
 
-.default-feature .feature__background-image {
-    min-height: 150px;
-    height: 150px;
+.page-title {
+    border-bottom: 1px solid @color-swatch7;
+    border-top: 1px solid @color-swatch7;
+    padding: 40px;
+    text-align: center;
+    h1 {
+        padding-bottom: 0;
+    @media @tablet {
+        font-size: bkscale(@font-swatch1-font-size,0.8);
+        line-height: bkscale(@font-swatch1-line-height,0.9);
+        max-width: 100%;
+    }
+    @media @mobile {
+        font-size: bkscale(@font-swatch1-font-size,0.6);
+        line-height: bkscale(@font-swatch1-line-height,0.7);
+    }
+    }
 }
 
 
