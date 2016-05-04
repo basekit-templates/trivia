@@ -4,9 +4,13 @@
 
 {% include "includes/header.twig" %}
 <div class="bk-pt-default">
-	<div class="page-title">
-		{{widget('pagetitle', 'title', {})|raw}}
-	</div>
+		{{widget('feature', 'featurehome', {
+		"header": "profile",
+		"defaultBgImg": asset('images/feature-bg.jpg'),
+		'positionTopPercentage': '0',
+		'showBtn': false,
+		buttonText: "Lorem Ipsum"
+	})|raw}}
 	
 	<!-- Container -->
 	<div class="container">
