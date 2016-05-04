@@ -4,7 +4,13 @@
 
 {% include "includes/header.twig" %}
 <div class="bk-pt-default">
-	Test
+	{{widget('feature', 'featuredefault', {
+		'header': 'profile',
+		'strapline': 'profile',
+		'defaultBgImg': asset("images/feature-bg.jpg"),
+		'positionTopPercentage': '0',
+		'showBtn': false
+	})|raw}}
 	
 	<!-- Container -->
 	<div class="container">
