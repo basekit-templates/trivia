@@ -59,6 +59,12 @@
 	}
 }
 
+.folder-open .item-name--parent:after {
+	@media @tablet {
+		transform: rotate(90deg);
+	}
+}
+
 .item-name--parent {
 
 	&:after {
@@ -73,8 +79,8 @@
 		@media @tablet {
 			content: "\f054";
 			font-size: 0.8em;
-			height: 31px;
-			margin-top: -11px;
+			height: auto;
+			margin-top: 0;
 		}
 		.navigation-item.open & {
 			@media @tablet {
