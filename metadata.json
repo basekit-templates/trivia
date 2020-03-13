@@ -1,5 +1,6 @@
 {
     "name":"Trivia",
+    "versionTenCompatible": 1,
     "thumbnail":"trivia.png",
     "screenshot":"trivia-screenshot.jpg",
     "tags": {
