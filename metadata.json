@@ -1,4 +1,5 @@
 {
+    "versionTenCompatible": 1,
     "name":"Trivia",
     "thumbnail":"trivia.png",
     "screenshot":"trivia-screenshot.jpg",
